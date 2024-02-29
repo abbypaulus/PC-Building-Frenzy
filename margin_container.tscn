@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=3 uid="uid://cgoc662q5r1y6"]
+
+[ext_resource type="Texture2D" uid="uid://dmjqinpinvpe2" path="res://Logo pixel.svg" id="1_8vpo4"]
+
+[node name="MarginContainer" type="MarginContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="Logo" type="TextureRect" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+texture = ExtResource("1_8vpo4")
+stretch_mode = 2
+
+[node name="Start" type="TextureRect" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Continue" type="TextureRect" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="New Game" type="TextureRect" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Options" type="TextureRect" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Version" type="TextureRect" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="HBoxContainer"]
+layout_mode = 2
